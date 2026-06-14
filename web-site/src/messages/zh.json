@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "首页",
+    "catalogue": "产品目录",
+    "services": "服务",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "quote": "请求报价"
+  },
+  "hero": {
+    "eyebrow": "重型设备 — 非洲与中国",
+    "title": "您在非洲的重型设备合作伙伴",
+    "subtitle": "直接从中国进口的卡车、挖掘机、装载机和施工设备。质量认证，快速交付，售后服务。",
+    "cta_primary": "查看目录",
+    "cta_secondary": "联系我们"
+  },
+  "stats": {
+    "machines": "已交付500+台设备",
+    "countries": "服务12个国家",
+    "delivery": "48小时响应",
+    "years": "10+年经验"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "从采购到交付的全程支持",
+    "import": { "title": "中国直接进口", "desc": "我们直接从顶级中国制造商进口。" },
+    "transport": { "title": "海运和公路运输", "desc": "完整的货运管理：装载、清关、交货。" },
+    "financing": { "title": "融资", "desc": "与银行合作伙伴量身定制的融资解决方案。" },
+    "warranty": { "title": "质保和售后", "desc": "制造商质保和售后服务，提供原厂配件。" },
+    "inspection": { "title": "质量检验", "desc": "发货前严格检验，提供照片/视频报告。" },
+    "consulting": { "title": "咨询和专业知识", "desc": "我们的专家为您推荐最适合项目的设备。" },
+    "training": { "title": "操作员培训", "desc": "由认证技术人员进行操作和维护培训。" }
+  },
+  "products": {
+    "title": "特色产品",
+    "subtitle": "我们最受欢迎设备的精选",
+    "view_all": "查看完整目录",
+    "view_detail": "查看详情",
+    "request_quote": "请求报价",
+    "specs": "技术规格",
+    "similar": "相似产品",
+    "filters": { "all": "全部", "search": "搜索设备..." }
+  },
+  "how_it_works": {
+    "title": "如何运作",
+    "subtitle": "简单透明的流程",
+    "step1": { "title": "选择您的设备", "desc": "浏览我们的目录，选择适合您需求的设备。" },
+    "step2": { "title": "请求报价", "desc": "填写报价表，48小时内收到我们的报价。" },
+    "step3": { "title": "确认订单", "desc": "签署合同并按约定条款付款。" },
+    "step4": { "title": "交货", "desc": "您的设备在约定时间内交付到您的工地。" }
+  },
+  "why_us": {
+    "title": "为什么选择我们",
+    "price": { "title": "有竞争力的价格", "desc": "直接来自制造商，没有中间商。" },
+    "quality": { "title": "质量保证", "desc": "发货前检验，制造商质保。" },
+    "speed": { "title": "快速交货", "desc": "通过我们的物流合作伙伴优化时间表。" },
+    "support": { "title": "本地支持", "desc": "在喀麦隆的团队为您提供协助。" }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们的团队在48小时内回复",
+    "form": {
+      "name": "全名",
+      "email": "电子邮件",
+      "phone": "电话",
+      "subject": "主题",
+      "message": "消息",
+      "send": "发送消息",
+      "success": "消息发送成功！",
+      "error": "发送错误，请重试。"
+    }
+  },
+  "quote": {
+    "title": "请求报价",
+    "subtitle": "48小时内收到个性化报价",
+    "form": {
+      "name": "全名",
+      "email": "电子邮件",
+      "phone": "电话",
+      "country": "国家",
+      "product": "所需产品",
+      "quantity": "数量",
+      "message": "消息（可选）",
+      "submit": "发送请求",
+      "success": "请求已发送！我们将在48小时内联系您。",
+      "error": "错误，请重试。"
+    }
+  },
+  "footer": {
+    "tagline": "您在非洲的重型设备合作伙伴",
+    "navigation": "导航",
+    "contact": "联系",
+    "follow": "关注我们",
+    "rights": "版权所有",
+    "terms": "法律声明",
+    "privacy": "隐私政策"
+  },
+  "about": {
+    "title": "关于TOCHE & FILS",
+    "subtitle": "10年国际重型设备贸易专业经验",
+    "history_title": "我们的故事",
+    "history": "TOCHE & FILS国际贸易有限公司由Franklin Kuate创立，源于非洲值得以合理价格获得优质设备的信念。",
+    "values_title": "我们的价值观",
+    "values": {
+      "integrity": { "title": "诚信", "desc": "客户的信任是我们最宝贵的财富。" },
+      "quality": { "title": "质量", "desc": "我们只销售符合标准的设备。" },
+      "partnership": { "title": "合作", "desc": "我们与客户和供应商建立持久的关系。" },
+      "innovation": { "title": "创新", "desc": "我们不断寻求改善我们的服务。" }
+    }
+  }
+}

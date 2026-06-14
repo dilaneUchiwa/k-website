@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "catalogue": "Catalogue",
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact",
+    "quote": "Demander un devis"
+  },
+  "hero": {
+    "eyebrow": "Équipements lourds — Afrique & Chine",
+    "title": "Votre partenaire pour les équipements lourds en Afrique",
+    "subtitle": "Camions, pelleteuses, chargeuses et engins de chantier directement importés de Chine. Qualité certifiée, livraison rapide, service après-vente.",
+    "cta_primary": "Voir le catalogue",
+    "cta_secondary": "Nous contacter"
+  },
+  "stats": {
+    "machines": "500+ engins livrés",
+    "countries": "12 pays desservis",
+    "delivery": "48h de réponse",
+    "years": "10+ ans d'expérience"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Un accompagnement complet de l'achat à la livraison",
+    "import": {
+      "title": "Import direct Chine",
+      "desc": "Nous importons directement des meilleurs fabricants chinois : SINOTRUK, SHACMAN, SANY, SDLG, XCMG et plus."
+    },
+    "transport": {
+      "title": "Fret maritime & routier",
+      "desc": "Gestion complète du fret : chargement, dédouanement, convoyage jusqu'à votre chantier."
+    },
+    "financing": {
+      "title": "Financement",
+      "desc": "Solutions de financement adaptées avec nos partenaires bancaires pour l'acquisition de vos équipements."
+    },
+    "warranty": {
+      "title": "Garantie & SAV",
+      "desc": "Garantie constructeur et service après-vente avec accès aux pièces détachées d'origine."
+    },
+    "inspection": {
+      "title": "Inspection qualité",
+      "desc": "Inspection rigoureuse de chaque engin avant expédition. Rapports photos et vidéos fournis."
+    },
+    "consulting": {
+      "title": "Conseil & expertise",
+      "desc": "Nos experts vous conseillent dans le choix des équipements les mieux adaptés à vos chantiers."
+    },
+    "training": {
+      "title": "Formation opérateurs",
+      "desc": "Formation à la conduite et à l'entretien de vos équipements par nos techniciens certifiés."
+    }
+  },
+  "products": {
+    "title": "Nos Produits Phares",
+    "subtitle": "Sélection de nos équipements les plus demandés",
+    "view_all": "Voir tout le catalogue",
+    "view_detail": "Voir les détails",
+    "request_quote": "Demander un devis",
+    "specs": "Caractéristiques techniques",
+    "similar": "Produits similaires",
+    "filters": {
+      "all": "Tous",
+      "search": "Rechercher un engin..."
+    }
+  },
+  "how_it_works": {
+    "title": "Comment ça marche",
+    "subtitle": "Un processus simple et transparent",
+    "step1": { "title": "Choisissez votre engin", "desc": "Parcourez notre catalogue et sélectionnez l'équipement adapté à vos besoins." },
+    "step2": { "title": "Demandez un devis", "desc": "Remplissez le formulaire de devis et recevez notre offre en 48h." },
+    "step3": { "title": "Confirmez la commande", "desc": "Signez le contrat et effectuez le paiement selon les modalités convenues." },
+    "step4": { "title": "Livraison", "desc": "Votre équipement est livré sur votre chantier dans les délais convenus." }
+  },
+  "why_us": {
+    "title": "Pourquoi nous choisir",
+    "price": { "title": "Prix compétitifs", "desc": "Direct du fabricant, sans intermédiaire." },
+    "quality": { "title": "Qualité garantie", "desc": "Inspection avant expédition, garantie constructeur." },
+    "speed": { "title": "Livraison rapide", "desc": "Délais optimisés grâce à nos partenaires logistiques." },
+    "support": { "title": "Support local", "desc": "Équipe présente au Cameroun pour vous accompagner." }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Notre équipe répond en moins de 48h",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "success": "Message envoyé avec succès !",
+      "error": "Erreur lors de l'envoi. Réessayez."
+    }
+  },
+  "quote": {
+    "title": "Demander un devis",
+    "subtitle": "Recevez une offre personnalisée en 48h",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "country": "Pays",
+      "product": "Produit souhaité",
+      "quantity": "Quantité",
+      "message": "Message (optionnel)",
+      "submit": "Envoyer la demande",
+      "success": "Demande envoyée ! Nous vous recontactons dans les 48h.",
+      "error": "Erreur. Veuillez réessayer."
+    }
+  },
+  "footer": {
+    "tagline": "Votre partenaire pour les équipements lourds en Afrique",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "follow": "Suivez-nous",
+    "rights": "Tous droits réservés",
+    "terms": "Mentions légales",
+    "privacy": "Politique de confidentialité"
+  },
+  "about": {
+    "title": "À propos de TOCHE & FILS",
+    "subtitle": "10 ans d'expertise dans le négoce international d'équipements lourds",
+    "history_title": "Notre histoire",
+    "history": "Fondée par Franklin Kuate, TOCHE & FILS International Trade Co., LTD est née de la conviction que l'Afrique mérite des équipements de qualité à des prix accessibles. Depuis plus de 10 ans, nous construisons des ponts commerciaux entre la Chine et l'Afrique subsaharienne.",
+    "values_title": "Nos valeurs",
+    "values": {
+      "integrity": { "title": "Intégrité", "desc": "La confiance de nos clients est notre bien le plus précieux." },
+      "quality": { "title": "Qualité", "desc": "Nous ne commercialisons que des équipements répondant à nos standards." },
+      "partnership": { "title": "Partenariat", "desc": "Nous construisons des relations durables avec clients et fournisseurs." },
+      "innovation": { "title": "Innovation", "desc": "Nous cherchons constamment à améliorer nos services." }
+    }
+  }
+}

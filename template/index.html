@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOCHE &amp; FILS — Maquettes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0A5FA8;--navy:#063D6E;--cta:#E05A00;--line:#E5E7EB;--muted:#6B7280;
+  --ff-head:"Montserrat",system-ui,sans-serif;--ff-body:"Inter",system-ui,sans-serif;
+  --ease:cubic-bezier(.16,.84,.44,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--ff-body);background:#f4f6fa;min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+
+/* hero band */
+.top{background-color:var(--navy);background-image:linear-gradient(130deg,#04223f 0%,#0A5FA8 60%,#0e6fc0 100%);color:#fff;padding:60px 40px 54px;text-align:center;position:relative;overflow:hidden}
+.top::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1.4px);background-size:28px 28px;pointer-events:none}
+.top .logo{width:60px;height:60px;border-radius:16px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);display:grid;place-items:center;margin:0 auto 20px;position:relative;z-index:1}
+.top .logo svg{width:32px;height:32px;color:#fff}
+.top h1{font-family:var(--ff-head);font-weight:800;font-size:clamp(26px,4vw,42px);position:relative;z-index:1;letter-spacing:-.02em}
+.top p{color:#bfdcf3;margin:14px auto 0;max-width:52ch;font-size:17px;line-height:1.65;position:relative;z-index:1}
+.top .pills{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px;position:relative;z-index:1}
+.top .pill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:7px 15px;border-radius:999px;font-size:13px;font-family:var(--ff-head);font-weight:600;letter-spacing:.03em}
+.top .pill svg{width:15px;height:15px}
+
+/* cards grid */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:980px;margin:50px auto;padding:0 28px 60px}
+@media(max-width:720px){.cards{grid-template-columns:1fr}}
+
+.proto-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(6,61,110,.07);transition:transform .26s var(--ease),box-shadow .26s var(--ease);display:flex;flex-direction:column}
+.proto-card:hover{transform:translateY(-7px);box-shadow:0 18px 50px rgba(6,61,110,.13)}
+.proto-card .preview{height:240px;position:relative;overflow:hidden}
+.proto-card .preview img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s var(--ease)}
+.proto-card:hover .preview img{transform:scale(1.04)}
+.proto-card .preview .tag{position:absolute;top:14px;left:14px;background:rgba(6,30,55,.7);color:#fff;font-family:var(--ff-head);font-weight:600;font-size:12px;padding:6px 12px;border-radius:999px;backdrop-filter:blur(6px)}
+.proto-card .preview .screens{position:absolute;bottom:14px;right:14px;display:flex;gap:6px}
+.proto-card .preview .screens span{background:rgba(255,255,255,.88);color:var(--navy);font-family:var(--ff-head);font-weight:700;font-size:11px;padding:5px 10px;border-radius:999px}
+.proto-card .body{padding:26px 26px 22px;flex:1;display:flex;flex-direction:column}
+.proto-card .type{font-family:var(--ff-head);font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.proto-card h2{font-family:var(--ff-head);font-weight:800;font-size:22px;color:var(--navy)}
+.proto-card p{color:var(--muted);font-size:14.5px;margin:10px 0 0;line-height:1.65;flex:1}
+.proto-card .features{display:flex;flex-direction:column;gap:7px;margin:18px 0}
+.proto-card .feat{display:flex;align-items:center;gap:9px;font-size:13.5px;color:#334}
+.proto-card .feat svg{width:16px;height:16px;color:var(--blue);flex:none}
+.proto-card .actions{display:flex;gap:10px;padding-top:18px;border-top:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;gap:8px;justify-content:center;font-family:var(--ff-head);font-weight:600;font-size:14px;padding:11px 18px;border-radius:11px;border:1.5px solid transparent;transition:all .18s var(--ease);white-space:nowrap}
+.btn svg{width:17px;height:17px}
+.btn-cta{background:var(--cta);color:#fff;flex:1}.btn-cta:hover{background:#bf4d00;transform:translateY(-1px);box-shadow:0 8px 18px rgba(224,90,0,.28)}
+.btn-secondary{border-color:var(--line);color:#334;background:#fff;flex:1}.btn-secondary:hover{border-color:var(--blue);color:var(--blue)}
+
+/* preview thumbs using real images */
+.hero-thumb{background-color:#063D6E;background-image:linear-gradient(130deg,#04223f,#0A5FA8 70%);display:flex;align-items:center;justify-content:center;height:100%;width:100%}
+.admin-thumb{background-color:#072A4D;background-image:linear-gradient(150deg,#041f3a,#063D6E 80%);display:flex;align-items:center;justify-content:center;height:100%;width:100%;padding:16px}
+
+/* bottom note */
+.note{background:#fff;border-top:1px solid var(--line);padding:22px 40px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.note span{font-size:13px;color:var(--muted)}
+.note strong{color:var(--navy)}
+.note .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(22,163,74,.1);color:#15803d;font-family:var(--ff-head);font-weight:600;font-size:12px;padding:5px 12px;border-radius:999px}
+.note .badge svg{width:14px;height:14px}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+  </div>
+  <h1>TOCHE &amp; FILS — Maquettes Plateforme</h1>
+  <p>Deux prototypes interactifs haute-fidélité : le site vitrine public et l'espace d'administration privé, conformément aux spécifications v1.0.</p>
+  <div class="pills">
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Responsive mobile &amp; desktop</span>
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> 3 variations visuelles</span>
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h1"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="6.5" cy="18.5" r="2.5"/><circle cx="17.5" cy="18.5" r="2.5"/></svg> Photos réelles des engins</span>
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg> Charte TOCHE &amp; FILS</span>
+  </div>
+</div>
+
+<div class="cards">
+
+  <!-- Site Vitrine -->
+  <div class="proto-card">
+    <div class="preview">
+      <img src="assets/img/hero.png" alt="Site Vitrine" style="object-position:center top">
+      <span class="tag">Site vitrine public</span>
+      <div class="screens">
+        <span>7 pages</span>
+        <span>Animé</span>
+      </div>
+    </div>
+    <div class="body">
+      <div class="type">Prototype interactif</div>
+      <h2>Site Vitrine</h2>
+      <p>SPA complète avec navigation animée : accueil, services, catalogue filtrable, fiche produit, devis, contact et à propos. Topbar WhatsApp, footer complet.</p>
+      <div class="features">
+        <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Accueil héro + stats animées</div>
+        <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Catalogue avec 9 produits réels &amp; photos</div>
+        <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Formulaire de devis pré-rempli</div>
+        <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> 3 variations via panneau Tweaks</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-cta" href="TOCHE &amp; FILS — Site Vitrine.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+          Ouvrir le site vitrine
+        </a>
+        <a class="btn btn-secondary" href="TOCHE &amp; FILS — Site Vitrine.html#/catalogue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/></svg>
+          Catalogue
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backoffice -->
+  <div class="proto-card">
+    <div class="preview" style="background:#072A4D">
+      <div style="position:absolute;inset:0;background-image:linear-gradient(150deg,#041f3a,#063D6E 80%);display:flex;align-items:stretch">
+        <!-- mini admin UI sketch -->
+        <div style="width:72px;background:rgba(0,0,0,.25);display:flex;flex-direction:column;padding:14px 10px;gap:10px">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.1);margin:0 auto"></div>
+          ${[1,2,3,4,5,6].map(()=>`<div style="height:8px;border-radius:4px;background:rgba(255,255,255,${Math.random()>.5?'.25':'.1'})"></div>`).join('')}
+        </div>
+        <div style="flex:1;padding:14px;display:flex;flex-direction:column;gap:10px">
+          <div style="height:10px;border-radius:5px;background:rgba(255,255,255,.2);width:40%"></div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
+            ${['rgba(10,95,168,.6)','rgba(224,90,0,.6)','rgba(46,156,219,.5)','rgba(22,163,74,.5)'].map(c=>`<div style="height:56px;border-radius:10px;background:${c}"></div>`).join('')}
+          </div>
+          <div style="flex:1;border-radius:10px;background:rgba(255,255,255,.06);padding:10px;display:flex;flex-direction:column;gap:7px">
+            ${[1,2,3,4].map(()=>`<div style="height:7px;border-radius:4px;background:rgba(255,255,255,.15)"></div>`).join('')}
+          </div>
+        </div>
+      </div>
+      <span class="tag">Espace administration</span>
+      <div class="screens">
+        <span>12 modules</span>
+        <span>Login</span>
+      </div>
+    </div>
+    <div class="body">
+      <div class="type">Prototype interactif</div>
+      <h2>Backoffice Admin</h2>
+      <p>Interface d'administration complète : gestion du catalogue, suivi des devis, facturation, comptabilité avec graphiques, utilisateurs et paramètres.</p>
+      <div class="features">
+        <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Dashboard avec KPIs &amp; graphiques</div>
+        <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> CRUD produits avec formulaire complet</div>
+        <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Facturation + aperçu facture PDF</div>
+        <div class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Comptabilité S1 2026 avec barres</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-cta" href="TOCHE &amp; FILS — Backoffice.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+          Ouvrir l'administration
+        </a>
+        <a class="btn btn-secondary" href="TOCHE &amp; FILS — Backoffice.html#/comptabilite">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+          Comptabilité
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="note">
+  <span>Maquettes <strong>TOCHE &amp; FILS International Trade Co., LTD</strong></span>
+  <span class="badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+    v1.0 — Juin 2026
+  </span>
+  <span>Charte bleue #0A5FA8 · Orange #E05A00 · Montserrat + Inter</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+import { NextRequest, NextResponse } from 'next/server';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
+import { prisma } from '@/lib/prisma';
+import { transactionSchema } from '@/lib/validations';
+
+export async function GET(request: NextRequest) {
+  const session = await getServerSession(authOptions);
+  if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
+  const { searchParams } = new URL(request.url);
+  const type = searchParams.get('type');
+  const page = parseInt(searchParams.get('page') || '1');
+  const limit = parseInt(searchParams.get('limit') || '20');
+
+  const where: any = {};
+  if (type) where.type = type;
+
+  const [transactions, total] = await Promise.all([
+    prisma.transaction.findMany({
+      where,
+      include: { createdBy: { select: { name: true } } },
+      orderBy: { date: 'desc' },
+      skip: (page - 1) * limit,
+      take: limit,
+    }),
+    prisma.transaction.count({ where }),
+  ]);
+
+  return NextResponse.json({ data: transactions, total });
+}
+
+export async function POST(request: NextRequest) {
+  const session = await getServerSession(authOptions);
+  if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
+  try {
+    const body = await request.json();
+    const parsed = transactionSchema.safeParse(body);
+    if (!parsed.success) return NextResponse.json({ error: 'Validation error', details: parsed.error.issues }, { status: 400 });
+
+    const transaction = await prisma.transaction.create({
+      data: {
+        ...parsed.data,
+        date: new Date(parsed.data.date),
+        createdById: (session.user as any).id,
+      },
+    });
+    return NextResponse.json(transaction, { status: 201 });
+  } catch (error) {
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+  }
+}

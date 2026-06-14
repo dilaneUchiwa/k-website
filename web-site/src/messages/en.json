@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "catalogue": "Catalogue",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "quote": "Request a quote"
+  },
+  "hero": {
+    "eyebrow": "Heavy Equipment — Africa & China",
+    "title": "Your partner for heavy equipment in Africa",
+    "subtitle": "Trucks, excavators, loaders and construction equipment imported directly from China. Certified quality, fast delivery, after-sales service.",
+    "cta_primary": "View catalogue",
+    "cta_secondary": "Contact us"
+  },
+  "stats": {
+    "machines": "500+ machines delivered",
+    "countries": "12 countries served",
+    "delivery": "48h response",
+    "years": "10+ years experience"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete support from purchase to delivery",
+    "import": { "title": "Direct China import", "desc": "We import directly from top Chinese manufacturers." },
+    "transport": { "title": "Sea & road freight", "desc": "Complete freight management: loading, customs clearance, delivery." },
+    "financing": { "title": "Financing", "desc": "Tailored financing solutions with our banking partners." },
+    "warranty": { "title": "Warranty & After-sales", "desc": "Manufacturer warranty and after-sales service with OEM parts access." },
+    "inspection": { "title": "Quality inspection", "desc": "Rigorous inspection before shipment with photo/video reports." },
+    "consulting": { "title": "Consulting & expertise", "desc": "Our experts advise you on the best equipment for your projects." },
+    "training": { "title": "Operator training", "desc": "Training for operation and maintenance by certified technicians." }
+  },
+  "products": {
+    "title": "Featured Products",
+    "subtitle": "Selection of our most requested equipment",
+    "view_all": "View all catalogue",
+    "view_detail": "View details",
+    "request_quote": "Request a quote",
+    "specs": "Technical specifications",
+    "similar": "Similar products",
+    "filters": { "all": "All", "search": "Search equipment..." }
+  },
+  "how_it_works": {
+    "title": "How it works",
+    "subtitle": "A simple and transparent process",
+    "step1": { "title": "Choose your equipment", "desc": "Browse our catalogue and select equipment suited to your needs." },
+    "step2": { "title": "Request a quote", "desc": "Fill in the quote form and receive our offer within 48h." },
+    "step3": { "title": "Confirm the order", "desc": "Sign the contract and make payment according to agreed terms." },
+    "step4": { "title": "Delivery", "desc": "Your equipment is delivered to your site within the agreed timeframe." }
+  },
+  "why_us": {
+    "title": "Why choose us",
+    "price": { "title": "Competitive prices", "desc": "Direct from the manufacturer, no middleman." },
+    "quality": { "title": "Guaranteed quality", "desc": "Pre-shipment inspection, manufacturer warranty." },
+    "speed": { "title": "Fast delivery", "desc": "Optimized timelines with our logistics partners." },
+    "support": { "title": "Local support", "desc": "Team present in Cameroon to assist you." }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Our team responds within 48h",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message",
+      "success": "Message sent successfully!",
+      "error": "Error sending. Please try again."
+    }
+  },
+  "quote": {
+    "title": "Request a quote",
+    "subtitle": "Receive a personalized offer within 48h",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "country": "Country",
+      "product": "Desired product",
+      "quantity": "Quantity",
+      "message": "Message (optional)",
+      "submit": "Send request",
+      "success": "Request sent! We will contact you within 48h.",
+      "error": "Error. Please try again."
+    }
+  },
+  "footer": {
+    "tagline": "Your partner for heavy equipment in Africa",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "follow": "Follow us",
+    "rights": "All rights reserved",
+    "terms": "Legal notice",
+    "privacy": "Privacy policy"
+  },
+  "about": {
+    "title": "About TOCHE & FILS",
+    "subtitle": "10 years of expertise in international heavy equipment trading",
+    "history_title": "Our story",
+    "history": "Founded by Franklin Kuate, TOCHE & FILS International Trade Co., LTD was born from the conviction that Africa deserves quality equipment at accessible prices.",
+    "values_title": "Our values",
+    "values": {
+      "integrity": { "title": "Integrity", "desc": "Our clients' trust is our most precious asset." },
+      "quality": { "title": "Quality", "desc": "We only sell equipment meeting our standards." },
+      "partnership": { "title": "Partnership", "desc": "We build lasting relationships with clients and suppliers." },
+      "innovation": { "title": "Innovation", "desc": "We constantly seek to improve our services." }
+    }
+  }
+}

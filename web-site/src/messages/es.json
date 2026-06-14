@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "catalogue": "Catálogo",
+    "services": "Servicios",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "quote": "Solicitar presupuesto"
+  },
+  "hero": {
+    "eyebrow": "Equipos pesados — África & China",
+    "title": "Su socio para equipos pesados en África",
+    "subtitle": "Camiones, excavadoras, cargadoras y maquinaria de obra importados directamente de China.",
+    "cta_primary": "Ver catálogo",
+    "cta_secondary": "Contáctenos"
+  },
+  "stats": {
+    "machines": "500+ máquinas entregadas",
+    "countries": "12 países atendidos",
+    "delivery": "Respuesta en 48h",
+    "years": "10+ años de experiencia"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Apoyo completo desde la compra hasta la entrega",
+    "import": { "title": "Importación directa China", "desc": "Importamos directamente de los mejores fabricantes chinos." },
+    "transport": { "title": "Flete marítimo y terrestre", "desc": "Gestión completa del flete: carga, despacho aduanero, entrega." },
+    "financing": { "title": "Financiación", "desc": "Soluciones de financiación adaptadas con nuestros socios bancarios." },
+    "warranty": { "title": "Garantía y Postventa", "desc": "Garantía del fabricante y servicio postventa con piezas de recambio." },
+    "inspection": { "title": "Inspección de calidad", "desc": "Inspección rigurosa antes del envío con informes fotográficos." },
+    "consulting": { "title": "Consultoría y experiencia", "desc": "Nuestros expertos le asesoran sobre los mejores equipos." },
+    "training": { "title": "Formación de operarios", "desc": "Formación en manejo y mantenimiento por técnicos certificados." }
+  },
+  "products": {
+    "title": "Productos Destacados",
+    "subtitle": "Selección de nuestros equipos más solicitados",
+    "view_all": "Ver todo el catálogo",
+    "view_detail": "Ver detalles",
+    "request_quote": "Solicitar presupuesto",
+    "specs": "Especificaciones técnicas",
+    "similar": "Productos similares",
+    "filters": { "all": "Todos", "search": "Buscar equipo..." }
+  },
+  "how_it_works": {
+    "title": "Cómo funciona",
+    "subtitle": "Un proceso simple y transparente",
+    "step1": { "title": "Elija su equipo", "desc": "Explore nuestro catálogo y seleccione el equipo adecuado." },
+    "step2": { "title": "Solicite presupuesto", "desc": "Complete el formulario y reciba nuestra oferta en 48h." },
+    "step3": { "title": "Confirme el pedido", "desc": "Firme el contrato y realice el pago según los términos acordados." },
+    "step4": { "title": "Entrega", "desc": "Su equipo se entrega en su obra en el plazo acordado." }
+  },
+  "why_us": {
+    "title": "Por qué elegirnos",
+    "price": { "title": "Precios competitivos", "desc": "Directo del fabricante, sin intermediarios." },
+    "quality": { "title": "Calidad garantizada", "desc": "Inspección previa al envío, garantía del fabricante." },
+    "speed": { "title": "Entrega rápida", "desc": "Plazos optimizados con nuestros socios logísticos." },
+    "support": { "title": "Apoyo local", "desc": "Equipo presente en Camerún para asistirle." }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "Nuestro equipo responde en menos de 48h",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "phone": "Teléfono",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar mensaje",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Error al enviar. Inténtelo de nuevo."
+    }
+  },
+  "quote": {
+    "title": "Solicitar presupuesto",
+    "subtitle": "Reciba una oferta personalizada en 48h",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "phone": "Teléfono",
+      "country": "País",
+      "product": "Producto deseado",
+      "quantity": "Cantidad",
+      "message": "Mensaje (opcional)",
+      "submit": "Enviar solicitud",
+      "success": "¡Solicitud enviada! Le contactaremos en 48h.",
+      "error": "Error. Por favor, inténtelo de nuevo."
+    }
+  },
+  "footer": {
+    "tagline": "Su socio para equipos pesados en África",
+    "navigation": "Navegación",
+    "contact": "Contacto",
+    "follow": "Síguenos",
+    "rights": "Todos los derechos reservados",
+    "terms": "Aviso legal",
+    "privacy": "Política de privacidad"
+  },
+  "about": {
+    "title": "Acerca de TOCHE & FILS",
+    "subtitle": "10 años de experiencia en comercio internacional de equipos pesados",
+    "history_title": "Nuestra historia",
+    "history": "Fundada por Franklin Kuate, TOCHE & FILS International Trade Co., LTD nació de la convicción de que África merece equipos de calidad a precios accesibles.",
+    "values_title": "Nuestros valores",
+    "values": {
+      "integrity": { "title": "Integridad", "desc": "La confianza de nuestros clientes es nuestro bien más preciado." },
+      "quality": { "title": "Calidad", "desc": "Solo comercializamos equipos que cumplen nuestros estándares." },
+      "partnership": { "title": "Asociación", "desc": "Construimos relaciones duraderas con clientes y proveedores." },
+      "innovation": { "title": "Innovación", "desc": "Buscamos constantemente mejorar nuestros servicios." }
+    }
+  }
+}
