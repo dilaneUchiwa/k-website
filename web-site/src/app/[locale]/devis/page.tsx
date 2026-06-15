@@ -5,7 +5,7 @@ import DevisForm from './DevisForm';
 import { CheckCircle } from 'lucide-react';
 
 export default async function DevisPage({
-  params: { locale },
+  params: { locale: _locale },
   searchParams,
 }: {
   params: { locale: string };

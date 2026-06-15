@@ -16,6 +16,7 @@ function pct(current: number, target: number) {
   if (!target) return 0;
   return Math.min(100, Math.round((current / target) * 100));
 }
+void pct; // utilisé conditionnellement dans les objectifs
 
 export default function ComptabiliteClient({
   totalIncome, totalExpense, netProfit, totalCredit, monthlyData, recentTxs, goals,

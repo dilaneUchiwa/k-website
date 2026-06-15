@@ -3,10 +3,10 @@ import { getTranslations } from 'next-intl/server';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import ContactForm from './ContactForm';
 import { PageHero } from '@/components/front/PageHero';
-import { SlideIn, StaggerChildren, StaggerItem, FadeUp } from '@/components/ui/Animate';
+import { SlideIn, StaggerChildren, StaggerItem } from '@/components/ui/Animate';
 
 export default async function ContactPage({
-  params: { locale },
+  params: { locale: _locale },
 }: {
   params: { locale: string };
 }) {

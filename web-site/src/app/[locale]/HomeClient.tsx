@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Truck, Globe, Clock, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { FadeUp, FadeIn, SlideIn, StaggerChildren, StaggerItem, FloatImage, ScaleIn } from '@/components/ui/Animate';
+import { FadeUp, FadeIn, StaggerChildren, StaggerItem, FloatImage } from '@/components/ui/Animate';
 import { ProductCard } from '@/components/front/ProductCard';
 import { SectionHead } from '@/components/front/SectionHead';
 

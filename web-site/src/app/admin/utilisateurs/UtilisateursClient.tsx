@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Users, Shield, Plus, Trash2, UserCheck, UserX } from 'lucide-react';
+import { Shield, Plus, Trash2, UserCheck, UserX } from 'lucide-react';
 
 type User = { id: string; name: string; email: string; role: string; active: boolean; createdAt: string };
 type Role = { id: string; name: string; userCount: number; permCount: number };

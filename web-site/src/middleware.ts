@@ -12,7 +12,7 @@ const intlMiddleware = createIntlMiddleware({
 });
 
 const authMiddleware = withAuth(
-  function onSuccess(req) {
+  function onSuccess(_req) {
     return NextResponse.next();
   },
   {

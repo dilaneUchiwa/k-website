@@ -1,9 +1,8 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import { ArrowRight, ChevronLeft } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { prisma } from '@/lib/prisma';
 import { ProductCard } from '@/components/front/ProductCard';
 import ImageGallery from './ImageGallery';
