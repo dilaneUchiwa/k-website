@@ -9,7 +9,7 @@ beforeAll(async () => {
   // seed minimum data for tests
   await prisma.$executeRawUnsafe('PRAGMA journal_mode=WAL');
 
-  const role = await prisma.userRole.upsert({
+  const _role = await prisma.userRole.upsert({
     where: { name: '__test_role__' },
     create: { name: '__test_role__' },
     update: {},
